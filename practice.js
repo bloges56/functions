@@ -52,3 +52,21 @@ const go = (direction, speed) => {
 
 
 
+var testNums = [10, 5, 438, 2373, 576, 895];
+
+//returns "even" if argument is even and "odd" if argument is odd
+const evenOrOdd = (num) => {
+    if(num%2 === 0){
+        return 'Even';
+    }
+    return 'Odd';
+}
+
+// for(var test of testNums){
+//     console.log(evenOrOdd(test));
+// }
+
+// console.log(evenOrOdd(0));
+
+
+

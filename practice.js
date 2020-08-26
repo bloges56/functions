@@ -70,3 +70,26 @@ const evenOrOdd = (num) => {
 
 
 
+const words = [
+    "The", "killing", "complex", "houses",
+    "married", "kittens", "and", "single",
+    "soldiers", "and", "their", "kleptomaniacal",
+    "families"
+]
+
+//filters out words that start with a k from an array of strings
+const filterOutK = (strings) => {
+    var filteredArray = [];
+    for(var word of strings){
+        if(!(word.startsWith('k'))){
+            filteredArray.push(word);
+        }
+    }
+    return filteredArray;
+}
+
+var noKArray = filterOutK(words);
+
+console.log(noKArray);
+
+

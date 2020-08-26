@@ -36,3 +36,19 @@ var result = add(17,4,11);
 
 
 
+//Logs a message that includes the given direction and speed of a car
+//If speed is over 75, log 'SLOW DOWN!'
+const go = (direction, speed) => {
+    var message = `The car is moving ${direction} at ${speed} mph.`
+    if(speed > 75){
+        message += " SLOW DOWN!";
+    }
+
+    console.log(message);
+}
+
+// go("forward", 20);
+// go("forward", 85);
+
+
+

@@ -122,6 +122,19 @@ const castForTuna = () => {
 
 
 
+//Fast Food
+const orderMeal = (sandwich, dessert, drink, side) => {
+    return {
+        "sandwich": sandwich,
+        "side": side,
+        "drink": drink,
+        "dessert": dessert
+    };
+}
+
+const takeOutBag = orderMeal("Ultimate Slammer", "Fudge sundae", "Mr. Pepper", "Potato wedges");
+// console.log(takeOutBag);
+
 
 
 

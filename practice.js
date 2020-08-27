@@ -137,4 +137,21 @@ const takeOutBag = orderMeal("Ultimate Slammer", "Fudge sundae", "Mr. Pepper", "
 
 
 
+//Same Chores, Different Days
+
+//Defining the chores
+
+const groceries = person => `${person.firstName} ${person.lastName} went to the grocery store`
+
+const dishes = person => `${person.firstName} ${person.lastName} washed the dishes`
+
+const laundry = person => `${person.firstName} ${person.lastName} did laundry`
+
+const lawn = person => `${person.firstName} ${person.lastName} mowed the lawn`
+
+const room = person => `${person.firstName} ${person.lastName} cleaned their room`
+
+const car = person => `${person.firstName} ${person.lastName} washed the car`
+
+
 

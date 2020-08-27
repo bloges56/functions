@@ -153,5 +153,19 @@ const room = person => `${person.firstName} ${person.lastName} cleaned their roo
 
 const car = person => `${person.firstName} ${person.lastName} washed the car`
 
+//Lazy Day
+
+const dayPlanner = (chore, person, day) => {
+    return chore(person) + ` on ${day}.`;
+}
+
+const brady = {
+    firstName: "Brady",
+    lastName: "Logan"
+}
+
+const choreSentence = dayPlanner(laundry, brady, "Friday");
+console.log(choreSentence);
+
 
 

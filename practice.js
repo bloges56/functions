@@ -88,8 +88,14 @@ const filterOutK = (strings) => {
     return filteredArray;
 }
 
-var noKArray = filterOutK(words);
+const createSentence = (strings) => {
+    return strings.join(' ');
+}
 
-console.log(noKArray);
+var noKArray = filterOutK(words);
+var sentence = createSentence(noKArray);
+console.log(sentence);
+
+
 
 

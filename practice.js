@@ -94,7 +94,33 @@ const createSentence = (strings) => {
 
 var noKArray = filterOutK(words);
 var sentence = createSentence(noKArray);
-console.log(sentence);
+// console.log(sentence);
+
+
+
+//You Can Tune a Piano, But You Can't...
+const castForTuna = () => {
+    var raffle = Math.floor(Math.random() * 3);
+    debugger;
+    if(raffle === 0){
+        return true;
+    }
+    
+    return false;
+    
+}
+
+// for(var i = 0; i<100; i++){
+//     var tuna = castForTuna();
+//     if(tuna){
+//         console.log("Sven hooked a tuna!  :)");
+//     }
+//     else{
+//         console.log("Sven came up empty-handed.  :(");
+//     }
+// }
+
+
 
 
 

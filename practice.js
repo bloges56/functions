@@ -155,8 +155,8 @@ const car = person => `${person.firstName} ${person.lastName} washed the car`
 
 //Lazy Day
 
-const dayPlanner = (chore, person, day) => {
-    return chore(person) + ` on ${day}.`;
+const dayPlanner = (chore1, chore2, chore3, person, day) => {
+    return `On ${day}, ${chore1(person)}, and ${chore2(person)}, and ${chore3(person)}.`;
 }
 
 const brady = {
@@ -164,8 +164,8 @@ const brady = {
     lastName: "Logan"
 }
 
-const choreSentence = dayPlanner(laundry, brady, "Friday");
-console.log(choreSentence);
+const choreSentence = dayPlanner(laundry, dishes, groceries, brady, "Friday");
+// console.log(choreSentence);
 
 
 
